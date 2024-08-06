@@ -1,0 +1,19 @@
+# config/routes.yaml
+home:
+  path: /home
+  controller: App\Controller\HomeController::index
+
+about:
+  path: /about
+  controller: App\Controller\AboutController::index
+
+# config/routes.yaml
+customers:
+  path: /customers
+  controller: App\Controller\CustomerController::getCustomers
+  methods: [GET]
+
+#   get_customers:
+#     path: /customers
+#     controller: App\Controller\CustomerController::getCustomers
+#     methods: [GET]
